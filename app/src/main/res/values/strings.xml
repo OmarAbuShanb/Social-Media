@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Social Media</string>
+
+    <string name="posts">Posts</string>
+    <string name="albums">Albums</string>
+    <string name="comments">Comments</string>
+    <string name="album_photos">Album Photos</string>
+</resources>

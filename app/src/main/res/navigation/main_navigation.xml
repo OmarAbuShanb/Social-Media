@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/navigation_posts">
+
+    <fragment
+        android:id="@+id/navigation_albums"
+        android:name="dev.anonymous.social.media.ui.main.albums.AlbumsFragment"
+        android:label="@string/albums"
+        tools:layout="@layout/fragment_albums" >
+        <action
+            android:id="@+id/action_navigation_albums_to_albumPhotosActivity"
+            app:destination="@id/albumPhotosActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_posts"
+        android:name="dev.anonymous.social.media.ui.main.posts.PostsFragment"
+        android:label="@string/posts"
+        tools:layout="@layout/fragment_posts">
+
+        <action
+            android:id="@+id/action_navigation_posts_to_navigation_post_comments_bottom_sheet"
+            app:destination="@id/navigation_post_comments_bottom_sheet" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/navigation_post_comments_bottom_sheet"
+        android:name="dev.anonymous.social.media.ui.dialogs.PostCommentsBottomSheet"
+        android:label="PostCommentsBottomSheet"
+        tools:layout="@layout/dialog_post_comments" >
+        <argument
+            android:name="postId"
+            app:argType="integer" />
+    </dialog>
+    <activity
+        android:id="@+id/albumPhotosActivity"
+        android:name="dev.anonymous.social.media.ui.other.AlbumPhotosActivity"
+        android:label="activity_album_photos"
+        tools:layout="@layout/activity_album_photos" >
+        <argument
+            android:name="albumId"
+            app:argType="integer" />
+    </activity>
+
+</navigation>

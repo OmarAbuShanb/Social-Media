@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SocialMedia" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- status bar and navigation bar -->
+        <item name="android:statusBarColor">@color/primary_color</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:navigationBarColor">@color/primary_color</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <!-- window -->
+        <item name="android:windowBackground">@color/window_color</item>
+        <!-- circular progress -->
+        <item name="circularProgressIndicatorStyle">@style/BaseCircularProgressStyle</item>
+    </style>
+
+    <style name="Theme.SocialMedia" parent="Base.Theme.SocialMedia" />
+
+    <style name="Theme.App.MySplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.SocialMedia</item>
+    </style>
+
+    <!--////////////////////////////////////// ToolBar /////////////////////////////////////////-->
+
+    <style name="ToolBarTitleAppearance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--////////////////////////////// CircularProgressIndicator //////////////////////////////-->
+
+    <style name="BaseCircularProgressStyle" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="android:indeterminate">true</item>
+        <item name="indicatorColor">@color/black</item>
+        <item name="trackCornerRadius">@dimen/_5sdp</item>
+        <item name="trackThickness">@dimen/_2sdp</item>
+    </style>
+
+
+</resources>

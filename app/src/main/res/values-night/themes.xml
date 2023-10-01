@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SocialMedia" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- status bar and navigation bar -->
+        <item name="android:statusBarColor">@color/primary_color</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">false</item>
+        <item name="android:navigationBarColor">@color/primary_color</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
+        <!-- window -->
+        <item name="android:windowBackground">@color/black</item>
+        <!-- circular progress -->
+        <item name="circularProgressIndicatorStyle">@style/BaseCircularProgressStyle</item>
+    </style>
+
+
+    <!--////////////////////////////// CircularProgressIndicator //////////////////////////////-->
+
+    <style name="BaseCircularProgressStyle" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="android:indeterminate">true</item>
+        <item name="indicatorColor">@color/white</item>
+        <item name="trackCornerRadius">@dimen/_5sdp</item>
+        <item name="trackThickness">@dimen/_2sdp</item>
+    </style>
+
+</resources>
