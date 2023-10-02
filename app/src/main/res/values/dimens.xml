@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_navigation_height">@dimen/_45sdp</dimen>
+    <dimen name="bottom_navigation_item_padding_bottom">@dimen/_8sdp</dimen>
+    <dimen name="circular_progress_margin_vertical">@dimen/_80sdp</dimen>
+</resources>

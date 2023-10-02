@@ -21,7 +21,7 @@
             android:background="@color/primary_color"
             android:gravity="center"
             android:textColor="@color/white"
-            android:textSize="@dimen/_13sdp"
+            android:textSize="@dimen/_13ssp"
             android:textStyle="bold"
             tools:text="55" />
 
@@ -39,7 +39,6 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textColor="@color/black"
             android:textSize="@dimen/_12ssp"
             android:textStyle="bold"
             tools:text="Jayne_Kuhic@sydney.com" />
@@ -48,7 +47,7 @@
             android:id="@+id/tvCommentBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_4ssp"
             android:textSize="@dimen/_11ssp"
             tools:text="non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati" />
 

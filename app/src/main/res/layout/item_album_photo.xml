@@ -2,26 +2,32 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/_280sdp"
     android:layout_marginBottom="@dimen/_5sdp">
 
     <ImageView
         android:id="@+id/ivAlbumPhoto"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_280sdp"
+        android:layout_height="match_parent"
         android:importantForAccessibility="no"
         android:scaleType="centerCrop"
+        tools:ignore="ImageContrastCheck"
         tools:src="@tools:sample/avatars" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_alpha_black" />
 
     <TextView
         android:id="@+id/tvTitleAlbumPhoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/gray"
-        android:padding="@dimen/_3sdp"
-        android:textAlignment="center"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/_8sdp"
+        android:gravity="center"
         android:textColor="@color/white"
-        android:textSize="@dimen/_18ssp"
+        android:textSize="@dimen/_16ssp"
         tools:text="non sunt voluptatem placeat consequuntur rem incidunt" />
 
 </FrameLayout>

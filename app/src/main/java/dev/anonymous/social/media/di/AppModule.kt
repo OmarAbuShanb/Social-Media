@@ -29,7 +29,7 @@ object AppModule {
             RequestOptions()
                 .diskCacheStrategy(DiskCacheStrategy.DATA)
                 .error(R.color.place_holder_color)
-                .placeholder(R.color.place_holder_color)
+                .placeholder(R.drawable.place_holder_color)
         )
 
     @Singleton

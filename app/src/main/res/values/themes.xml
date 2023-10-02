@@ -10,12 +10,14 @@
         <item name="android:windowBackground">@color/window_color</item>
         <!-- circular progress -->
         <item name="circularProgressIndicatorStyle">@style/BaseCircularProgressStyle</item>
+        <!-- text view -->
+        <item name="android:textViewStyle">@style/BaseTextViewStyle</item>
     </style>
 
     <style name="Theme.SocialMedia" parent="Base.Theme.SocialMedia" />
 
     <style name="Theme.App.MySplash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenBackground">@color/window_color</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
         <item name="postSplashScreenTheme">@style/Theme.SocialMedia</item>
     </style>
@@ -35,6 +37,22 @@
         <item name="indicatorColor">@color/black</item>
         <item name="trackCornerRadius">@dimen/_5sdp</item>
         <item name="trackThickness">@dimen/_2sdp</item>
+    </style>
+
+    <!--/////////////////////////////////////// TextView ///////////////////////////////////////-->
+
+    <style name="BaseTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--/////////////////////////////////////// CardView ///////////////////////////////////////-->
+
+    <style name="MaterialCardStyle" parent="Widget.MaterialComponents.CardView">
+        <!--  change default color in light mode -->
+        <item name="cardBackgroundColor">@color/white</item>
+        <!--  remove default stroke  -->
+        <item name="strokeWidth">0dp</item>
+        <item name="cardUseCompatPadding">true</item>
     </style>
 
 

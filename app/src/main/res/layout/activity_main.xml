@@ -27,11 +27,11 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_45sdp"
+        android:layout_height="@dimen/bottom_navigation_height"
         android:background="@color/primary_color"
         app:itemActiveIndicatorStyle="@null"
         app:itemIconTint="@color/white"
-        app:itemPaddingBottom="@dimen/_8sdp"
+        app:itemPaddingBottom="@dimen/bottom_navigation_item_padding_bottom"
         app:itemTextColor="@color/white"
         app:labelVisibilityMode="selected"
         app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
